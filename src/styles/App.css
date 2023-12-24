@@ -1,0 +1,14 @@
+#container{
+  display: flex;
+  height: 100vh; /* Use full height of the viewport */
+}
+
+.column {
+  flex-basis: 50%; 
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
