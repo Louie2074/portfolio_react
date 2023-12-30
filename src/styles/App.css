@@ -1,14 +1,39 @@
-#container{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #879bbc;
+}
+
+.flex-container {
   display: flex;
-  height: 100vh; /* Use full height of the viewport */
+  position: relative; /* Contains absolutely positioned children */
+  min-height: 100vh; 
 }
 
-.column {
-  flex-basis: 50%; 
+.left-column {
+  position: fixed;
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+  
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+.right-column {
+  margin-left: 50%;
+  width: 50%;
+  overflow-y: auto;
+
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    display: block; /* Stack the columns */
+  }
+
+  .left-column,
+  .right-column {
+    position: static; /* Reset positioning */
+    width: 100%; /* Each column takes full width */
+    margin-left: 0; /* Reset margin for the right column */
   }
 }

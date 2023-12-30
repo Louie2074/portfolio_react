@@ -1,0 +1,45 @@
+.profile-photo {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px; /* Make sure the height and width are equal */
+  border-radius: 50%; /* This creates the circular shape */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.nav a {
+  display: block; /* Makes each link a block, causing them to stack vertically */
+  margin: 5px 0; /* Optional: Adds some vertical space between the links */
+  text-align: center; /* Optional: Centers the text */ /* Optional: Removes the underline from the links */
+  color: #879bbc;; /* Optional: Sets the text color */
+  padding: 10px; /* Optional: Adds some padding to increase the clickable area */
+  /* Add more styles as needed */
+}
+
+.social-media {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Center horizontally in the flex container */
+  align-items: center; /* Center vertically in the flex container */
+}
+
+.social-media li {
+  margin: 0 10px; /* Horizontal spacing between items, no vertical margin */
+  /* Center the content of list items */
+  display: flex;
+  align-items: center; /* This will vertically center the icons in the list items */
+}
+
+
+
+/* Spin Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Hover Effect */
+.social-media a:hover {
+    background-color: 'red'; /* Brighter color when hovered */
+    animation: spin 1s ease-in-out; /* Spinning animation */
+}

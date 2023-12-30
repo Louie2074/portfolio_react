@@ -4,7 +4,7 @@ import Education from "./Sub_Components/Education";
 
 export default function Body(){
 return (
-  <div className="column ">
+  <div className="right-column ">
     <About />
     <Experience />
     <Education />
